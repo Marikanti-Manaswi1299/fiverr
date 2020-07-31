@@ -1,0 +1,162 @@
+:root {
+    --green: #00b30c;
+    --gray1: #353537;
+    --gray2: #eaeaeb;
+    --gray3: #777777;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700 !important;
+}
+h2{
+    font-size: 2.5rem !important;
+}
+h4{
+    font-size: 1.8rem;
+}
+
+header{
+    background-image: url(../img/hero.jpg);
+    min-height: 30rem;
+    background-size: cover;
+}
+a.btn-outline-light:hover {
+    color: black !important;
+}
+.header .nav-link{
+    color: white !important;
+}
+.caption{
+    min-height: 25rem;
+}
+.title{
+    font-weight: 700;
+}
+.category{
+    padding-bottom: 60px;
+    overflow: hidden;
+    height: calc(auto+30px);
+}
+.category h3::before{
+    content: "";
+    display: block;
+    margin: 5px auto 20px auto;
+    height: 1px;
+    width: 60px;
+    background-color: #48b300b9;
+    transition: all 0.3s ease;
+
+}
+.category:hover h3::before{
+    width: 180px;
+}
+.category p{
+    opacity:0;
+    padding-top: 30px;
+    transition: all 0.3s ease;
+}
+.category:hover p{
+     opacity:1;
+     display: block;
+     padding-top: 10px;
+     color: #999;
+}
+
+/* First-steps */
+.first-steps .row > div {
+    flex: 1 0 calc(50% - 1rem);
+}
+@media (min-width: 992px) {
+    .first-steps .row > div {
+        flex: 0 1 calc(20% - 1rem);
+    }
+}
+.first-step .description{
+    height: 20rem;
+    background-size: cover;
+}
+.first-step .description p{
+    font-size: .9rem;
+}
+.first-step .description h6{
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.first-step .logo{
+    background-image: url(../img/service_1.png);
+}
+.first-step .word-press{
+    background-image: url(../img/service_5.png);
+}
+.first-step .audio{
+    background-image: url(../img/service_3.png);
+}
+.first-step .white-board{
+    background-image: url(../img/service_4.png);
+}
+.first-step .social-media{
+    background-image: url(../img/service_2.png);
+}
+/* Benefits */
+.benefits .row{
+    height: 18rem;
+}
+.benefits span{
+    font-weight: 300;
+}
+.benefits p{
+    font-size: 0.9rem;
+}
+/* Testimonials */
+.testimonials{
+    background-color: #eaeaeb;
+}
+.testimonials .carousel{
+    background-color: white;
+}
+.testimonials .carousel-item h4{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.testimonials .carousel-item blockquote{
+    font-size: 1.8rem;
+    color: #676767;
+    font-style: italic;
+}
+.testimonials .carousel-item  p {
+    font-size: .8rem;
+}
+/* Footer */
+.footer{
+    border-top: 1px solid #eaeaeb;
+}
+.footer h3{
+    color:#777777 ;
+    font-size: 1.2rem;
+}
+.footer .nav-link{
+    color: #777777 !important;
+    padding: .5rem 0;
+    font-size: 1rem;
+}
+.footer .container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .container-fluid > div {
+    justify-content: space-between;
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .footer .container-fluid > div  {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .footer .container-fluid > div  {
+        flex: 0 1 calc(20%);
+    }
+}
